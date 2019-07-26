@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Responsive Navigation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<nav>
+		<div class="wrapper">
+			<a href="#" class="logo-brand btn">Logo</a>
+
+			<a href="#main" class="sr-only sr-only-focusable">Skip to Main Content</a>
+			<button 
+				class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" 
+				aria-label="Toggle navigation">
+				Menu
+			</button>
+
+			<ul class="main-nav mobile-hidden" aria-label="main navigation links" aria-expanded="false">
+				<li><a href="#">Link</a></li>
+				<li>
+					<a href="#" class="main-nav--trigger">Link</a>
+					<ul class="l2-nav hidden" aria-label="sub level navigation links" aria-expanded="false">
+						<li><a href="#">L2 Link</a></li>
+						<li><a href="#">L2 Link</a></li>
+						<li><a href="#">L2 Link</a></li>
+						<li><a href="#">L2 Link</a></li>
+						<li><a href="#">L2 Link</a></li>
+						<li><a href="#">L2 Link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+
+			<ul class="profile-nav" aria-label="profile navigation links">
+				<li>
+					<a href="#" class="btn-user btn">Profile John Doe</a>
+					<ul class="btn-user-nav hidden" aria-label="profile navigation items" aria-expanded="false">
+							<li><a href="#" class="btn-user-nav--trigger">Profile John Doe</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Link</a></li>
+							<li><a href="#">Sign Out</a></li>
+						</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<main id="main" role="main">
+		<div class="wrapper">
+			<h1>Hello World</h1>
+		</div>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<script src="main.js"></script>
+</body>
+
+</html>

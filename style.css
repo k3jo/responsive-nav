@@ -1,0 +1,312 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+nav {
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: -9999px;
+  top: 0;
+  z-index: -9999;
+  overflow: hidden;
+}
+
+.sr-only:focus,
+.sr-only:active {
+  color: #fff;
+  background-color: #000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid yellow;
+  text-align: center;
+  z-index: 999;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+}
+
+ul li,
+ul a {
+  display: inline-block;
+}
+
+ul a {
+  text-decoration: none;
+  color: gray;
+  padding: 5px 10px;
+}
+
+ul a:hover,
+ul a:focus {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.l2-nav {
+  position: absolute;
+  top: 70px;
+  left: 30%;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.navbar-toggler {
+  background: none;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar-toggler {
+    display: inline-block;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: gray;
+  text-decoration: none;
+  border: 1px solid gray;
+  padding: 10px 20px;
+}
+
+.btn-user {
+  background: #000;
+  color: #FFF;
+}
+
+@media (max-width: 767px) {
+  .main-nav.mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    position: absolute;
+    right: 0;
+    top: 80px;
+  }
+  .main-nav li {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-nav {
+    display: none;
+  }
+}
+
+.btn-user-nav {
+  border: 1px solid gray;
+  position: absolute;
+  top: 10px;
+  width: 200px;
+}
+
+.btn-user-nav li {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  border-bottom: 1px solid gray;
+}
+
+.btn-user-nav li:last-child {
+  border-bottom: none;
+}
+
+.btn-user-nav a {
+  width: 100%;
+}

@@ -1,0 +1,139 @@
+@import 'setup.scss';
+
+body {
+  font-size: 16px;
+}
+
+nav {
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: -9999px;
+  top: 0;
+  z-index: -9999;
+  overflow: hidden;
+}
+
+.sr-only:focus,
+.sr-only:active {
+  color: #fff;
+  background-color: #000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid yellow;
+  text-align: center;
+  z-index: 999;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+
+  li,
+  a {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+    color: gray;
+    padding: 5px 10px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+.hidden {
+  display: none;
+}
+
+.l2-nav {
+  position: absolute;
+  top: 70px;
+  left: 30%;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.navbar-toggler {
+  background: none;
+  display: none;
+  @media (max-width: 767px) {
+    display: inline-block;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: gray;
+  text-decoration: none;
+  border: 1px solid gray;
+  padding: 10px 20px;
+  &-user {
+    background: #000;
+    color: #FFF;
+  }
+}
+.main-nav {
+  &.mobile-hidden {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    position: absolute;
+    right: 0;
+    top: 80px;
+
+    li {
+      display: block;
+    }
+  }
+}
+.profile-nav {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.btn-user-nav {
+  border: 1px solid gray;
+  position: absolute;
+  top: 10px;
+  width: 200px;
+  li {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    border-bottom: 1px solid gray;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  a {
+    width: 100%;
+  }
+  
+}
